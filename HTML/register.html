@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Event Registration</title>
+</head>
+<body>
+
+  <h2>College Event Registration</h2>
+  <form>
+    <!-- Text Input -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+    <br><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year" required>
+      <option value="">Select Year</option>
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+    </select>
+    <br><br>
+
+    <!-- Checkbox -->
+    <label>Events Interested In:</label><br>
+    <input type="checkbox" name="event" value="Hackathon"> Hackathon <br>
+    <input type="checkbox" name="event" value="Cultural Fest"> Cultural Fest <br>
+    <input type="checkbox" name="event" value="Sports"> Sports <br>
+    <input type="checkbox" name="event" value="Workshop"> Workshop <br><br>
+
+    <!-- File Upload -->
+    <label for="file">Upload Student ID:</label>
+    <input type="file" id="file" name="file" accept=".jpg,.png">
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="message">Why do you want to participate?</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your answer..."></textarea>
+    <br><br>
+    <input list="options" name="browser" placeholder="Choose a browser">
+<datalist id="options">
+  <option value="Google Chrome">
+  <option value="Mozilla Firefox">
+  <option value="Microsoft Edge">
+  <option value="Safari">
+  <option value="Opera">
+</datalist>
+
+
+
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>

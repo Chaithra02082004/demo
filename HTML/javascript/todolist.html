@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simple todo list using DOM manipulation</h2>
+    <label> enter the task:</label><input id="userinput" type="text"><br><br>
+    <button onclick="addtask()"> add task</button>
+    <ol id="list">
+        <li> team registration<input type="checkbox"></li>
+        <li> complete assignment<input type="checkbox"></li>
+    </ol>
+    <script>
+        function addtask()
+        {
+            let inp=document.querySelector('#userinput')
+            
+            
+            let newitem=document.createElement("li")
+            
+            newitem.innerHTML=inp.value+"<input type='checkbox>"
+
+           
+
+            let list=document.querySelector('#list')
+            list.append(newitem)
+
+            inp.value=""
+        }
+    </script>
+
+</body>
+</html>

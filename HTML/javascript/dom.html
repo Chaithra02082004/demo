@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h1 id="heading1"> DOM manipulation</h1>
+    <div id="mydiv"> </div>
+    <p id="mypara">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sint magni nihil veniam assumenda, 
+        doloremque quaerat eos itaque dolor debitis optio aperiam tempora sapiente fugiat quibusdam repudiandae, 
+        accusantium sit iure officia totam! Corrupti, officia quia. Voluptate nobis magni accusantium similique 
+        obcaecati architecto porro nostrum? Consequuntur modi, odio alias reiciendis quod laudantium ratione! 
+        Aspernatur nesciunt nostrum dolore, tempore excepturi explicabo amet in quidem veniam eos ut incidunt 
+        alias reiciendis, nisi perspiciatis omnis deserunt dolor magni atque, obcaecati consectetur beatae dolores 
+        voluptates aliquid! Assumenda libero nulla voluptatem eligendi perferendis natus, dolor non iure qui consectetur 
+        voluptatum iste cum voluptas delectus sed quas?
+    </p>
+
+    <script>
+        // Access the h1 element
+        let ele = document.getElementById("heading1");
+        console.log(ele);
+        console.log(ele.textContent);
+
+        // Change its content
+        ele.textContent = "newcontent";
+
+        // Access the div and change its innerHTML
+        let div = document.getElementById("mydiv");
+        div.innerHTML = "<h1><u> division content </u></h1>";
+        mypara.style.backgroundColor="lightgreen"
+        mypara.style.textDecoration="underline"
+    </script>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h1 id="heading1" onmouseover="headingchange()"> DOM manipulation</h1>
+    <div> </div>
+    <p id="mypara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sint magni nihil veniam assumenda, doloremque quaerat eos itaque dolor debitis optio aperiam tempora sapiente fugiat quibusdam repudiandae, accusantium sit iure officia totam! Corrupti, officia quia. Voluptate nobis magni accusantium similique obcaecati architecto porro nostrum? Consequuntur modi, odio alias reiciendis quod laudantium ratione! Aspernatur nesciunt nostrum dolore, tempore excepturi explicabo amet in quidem veniam eos ut incidunt alias reiciendis, nisi perspiciatis omnis deserunt dolor magni atque, obcaecati consectetur beatae dolores voluptates aliquid! Assumenda libero nulla voluptatem eligendi perferendis natus, dolor non iure qui consectetur voluptatum iste cum voluptas delectus sed quas?</p>
+    <button onclick="bgChange('red')">red</button>
+    <button onclick="bgChange('blue')">blue</button>
+    <button onclick="bgChange('pink')">pink</button>
+    <script>
+        let ele=document.getElementById("heading1")
+        console.log(ele)
+        console.log(ele.textContent)
+        ele.textContent="newcontent"//to change the content
+        ele.innerHTML="<h1><u> division content</u></h1>"
+        mypara.style.backgroundColor="lightgreen"
+        mypara.style.textDecoration="underline solid blue"
+        let bgChange=(newcolor)=>
+    {
+        mypara.style.backgroundColor=newcolor
+    }
+    bgChange()
+    let headingchange=()=>
+    {
+        heading1.style.backgroundColor="red"
+    }
+
+    </script>
+    
+</body>
+</html>

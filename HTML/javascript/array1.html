@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Check Without Inbuilt Functions</title>
+</head>
+<body>
+  <script>
+    
+    let users = ['rakshith', 'raj', 'rishab'];
+
+    let name = prompt("Enter your name:");
+
+
+    let found = false;
+
+    
+    for (let i = 0; i < users.length; i++) {
+      if (users[i] === name) {
+        found = true;
+        break;
+      }
+    }
+
+    
+    if (found) {
+      document.write("User found: " + name);
+    } else {
+      document.write("User not found");
+    }
+  </script>
+</body>
+</html>

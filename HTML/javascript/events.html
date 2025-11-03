@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Events Example</title>
+  <style>
+    body {
+      text-align: center;
+    }
+ 
+    
+
+  </style>
+</head>
+<body>
+  <h1 id="heading1">Global academy</h1>
+  <p id="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque, inventore nesciunt nulla cum cumque laborum modi voluptas quia. Soluta, voluptates eveniet? Rerum magnam qui veritatis quis, eos, temporibus, explicabo et itaque quos modi sunt blanditiis fuga incidunt eum dolorem omnis. Laudantium vitae itaque deleniti corrupti cum ex laboriosam nihil a odit nesciunt laborum, voluptatem architecto est, eaque voluptatibus illo iusto in ut rerum. Tenetur possimus dignissimos numquam omnis quia. Laborum perspiciatis eos aut vero nemo laudantium, sequi harum itaque obcaecati nam laboriosam iusto odit commodi in iste libero quod vel eaque magnam. Ratione, deleniti alias! Repellat tempora soluta esse.</p>
+  <img id="myimage" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg" width="400" height="200">
+
+  <script>
+    let heading = document.getElementById("heading1");
+    let para = document.getElementById("mypara");
+    let image = document.getElementById("myimage");
+
+    
+    heading.addEventListener("click", () => {
+      para.innerText = para.innerText.toLowerCase();
+    });
+
+    
+    heading.addEventListener("dblclick", () => {
+      para.innerText = para.innerText.toUpperCase();
+    });
+
+    
+    document.addEventListener("keydown", () => {
+      document.body.style.backgroundColor = "yellow";
+    });
+
+
+    para.addEventListener("mouseover", () => {
+      image.style.margin = "0 auto"; // centers image
+      image.style.display = "block";
+    });
+  </script>
+</body>
+</html>
